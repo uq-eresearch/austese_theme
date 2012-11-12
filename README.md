@@ -10,3 +10,5 @@ How to use this theme:
 * Enable theme via drupal admin console
 
 License: GPL 2.0 or later
+
+This theme was developed as part of the [AustESE project](http://itee.uq.edu.au/~eresearch/projects/austese).
