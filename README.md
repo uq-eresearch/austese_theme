@@ -7,3 +7,5 @@ How to use this theme:
 
 * Install to sites/all/modules/austese
 * Download Twitter Bootstrap v2.0.4 and unarchive to 'bootstrap' directory inside austese theme folder
+
+License: GPL 2.0 or later
