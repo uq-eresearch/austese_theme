@@ -28,7 +28,18 @@
 */
 
 
-
+  /* Override whitespace for pre from bootstrap so it won't break SPARQL flint editor */
+  pre{
+    white-space:pre;
+    word-break:normal;
+    word-spacing:0px;
+    word-wrap:normal;
+  }
+  .pre {
+    white-space:pre-wrap;
+    word-break:break-all;
+  }
+  
 /* Fix Toolbar for .navbar-fixed-top */
 body.toolbar .navbar-fixed-top {
  top: 30px;
