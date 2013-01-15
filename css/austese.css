@@ -117,6 +117,12 @@ input.error {
 .navbar .nav > li > a {
  line-height:39px;
 }
+.navbar .nav > li > a.inline {
+    display:inline-block;
+}
+.navbar .nav > li > a.dropdown-toggle {
+    padding-left:0px;
+}
 .navbar-search {
  margin-top:15px;
 }

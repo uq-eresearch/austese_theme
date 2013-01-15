@@ -34,9 +34,9 @@
       		<?php if ($secondary_nav): ?>
       		  <?php print $secondary_nav; ?>
       		<?php endif; ?>
-      		<?php if ($search): ?>
-      		  <?php if ($search): print render($search); endif; ?>
-      		<?php endif; ?>
+      		
+      		<?php if ($search): print render($search); endif; ?>
+      		
 
     		</nav>
   	  </div>         

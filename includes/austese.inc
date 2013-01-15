@@ -128,16 +128,17 @@ function austese_austese_btn_dropdown($variables) {
   if(is_array($variables['label'])) {
 	$output .= l($variables['label']['title'], $$variables['label']['href'], $variables['label']);
   }
-  
-  
-
-  $output .= '<li class="dropdown" data-dropdown="dropdown"><a class="dropdown-toggle" href="#">';
-  
+  $href = "#";
+  if($variables['href']){
+   $href = $variables['href'];
+  }
+  $output .= '<li class="dropdown" data-dropdown="dropdown">';
+  $output .= '<a class="inline" href="' . $href . '">';
   // Its a link so create one
   if(is_string($variables['label'])) {
-	$output .= check_plain($variables['label']);
+   $output .= check_plain($variables['label']);
   }
-  
+  $output .= '</a><a class="inline dropdown-toggle" href="#">';
   // Finish markup 	
   $output .= '
   	<b class="caret"></b>

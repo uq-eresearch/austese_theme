@@ -156,21 +156,30 @@ function austese_preprocess_page(&$variables) {
     // Build links
     $tree = menu_tree_page_data($secondary_menu['menu_name']);
     $variables['secondary_menu'] = austese_menu_navigation_links($tree);
-    
-    // Build list
+    $links = $variables['secondary_menu'];
+    global $user; //decl var
+    if ($user->uid) {
+      $menulabel = $user->name;
+      $href = '/user';
+      // Build list
+    } else {
+      $menulabel = 'Log in';
+      $href = '/user/login';
+    }
     $variables['secondary_nav'] = theme('austese_btn_dropdown', array(
-      'links' => $variables['secondary_menu'],
-      'label' => $secondary_menu['title'],
-      'type' => 'success',
-      'attributes' => array(
-        'id' => 'user-menu',
-        'class' => array('pull-right nav'),
-      ),
-      'heading' => array(
-        'text' => t('Secondary menu'),
-        'level' => 'h2',
-        'class' => array('element-invisible'),
-      ),
+        'links' => $links,
+        'href'=> $href,
+        'label' => $menulabel,
+        'type' => 'success',
+        'attributes' => array(
+          'id' => 'user-menu',
+          'class' => array('pull-right nav'),
+        ),
+        'heading' => array(
+          'text' => t('Secondary menu'),
+          'level' => 'h2',
+          'class' => array('element-invisible'),
+        ),
     ));
   }
   
