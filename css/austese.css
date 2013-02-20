@@ -129,3 +129,28 @@ input.error {
 .navbar .dropdown .caret {
  margin-top:18px;
 }
+/* TEI */
+p.stage-italic { 
+    color: #51666b;
+    font-style: italic;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+p.stage { 
+    color: #51666b;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+span.speaker {
+    font-weight: bold
+}
+br.l {}
+p.sp {
+    line-height:2em;
+}
+span.italics {
+    font-style: italic
+}
+span.bold {
+    font-weight: bold;
+}
