@@ -12,3 +12,6 @@ How to use this theme:
 License: GPL 2.0 or later
 
 This theme was developed as part of the [AustESE project](http://itee.uq.edu.au/~eresearch/projects/austese).
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/uq-eresearch/austese_theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
