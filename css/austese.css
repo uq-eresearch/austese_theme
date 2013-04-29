@@ -39,7 +39,10 @@
     white-space:pre-wrap;
     word-break:break-all;
   }
-  
+body {
+    font-size: 13px;
+}
+
 /* Fix Toolbar for .navbar-fixed-top */
 body.toolbar .navbar-fixed-top {
  top: 30px;
@@ -116,6 +119,7 @@ input.error {
 }
 .navbar .nav > li > a {
  line-height:39px;
+ padding: 8px 10px 8px;
 }
 .navbar .nav > li > a.inline {
     display:inline-block;
@@ -126,7 +130,7 @@ input.error {
 .navbar-search {
  margin-top:15px;
 }
-.navbar .dropdown .caret {
+.navbar .nav .dropdown-toggle .caret {
  margin-top:18px;
 }
 /* TEI */
@@ -153,4 +157,7 @@ span.italics {
 }
 span.bold {
     font-weight: bold;
+}
+.white-well {
+    background-color:#FDFDFF;
 }
