@@ -161,6 +161,9 @@ span.bold {
 .white-well {
     background-color:#FDFDFF;
 }
+.invisi-well {
+  padding: 19px;
+}
 .annotator-notice-error {
     background-color: #B94A48;
     border-color: #B94A48;
