@@ -182,9 +182,6 @@ function austese_preprocess_page(&$variables) {
         ),
     ));
   }
-  
-  // Replace tabs with dropw down version
-  $variables['tabs']['#primary'] = _austese_local_tasks($variables['tabs']['#primary']);
 }
 
 function _austese_search_form($form, &$form_state) {
