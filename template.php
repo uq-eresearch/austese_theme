@@ -173,7 +173,7 @@ function austese_preprocess_page(&$variables) {
         'type' => 'success',
         'attributes' => array(
           'id' => 'user-menu',
-          'class' => array('pull-right nav'),
+          'class' => array('nav'),
         ),
         'heading' => array(
           'text' => t('Secondary menu'),
@@ -190,7 +190,7 @@ function _austese_search_form($form, &$form_state) {
 
   // Cleanup
   $form['#attributes']['class'][] = 'navbar-search';
-  $form['#attributes']['class'][] = 'pull-right';
+  //$form['#attributes']['class'][] = 'pull-right';
   $form['basic']['keys']['#title'] = '';
   $form['basic']['keys']['#attributes']['class'][] = 'search-query';
   $form['basic']['keys']['#attributes']['class'][] = 'span2';
