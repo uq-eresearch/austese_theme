@@ -1,6 +1,6 @@
 <header id="navbar" role="banner" class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
-      <div class="container">
+      <div class="container-fluid">
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
@@ -36,7 +36,6 @@
               <?php if ($secondary_nav): ?>
                 <?php print $secondary_nav; ?>
               <?php endif; ?>
-              
               </div>
             </nav>
         </div>
@@ -44,7 +43,7 @@
   </div>
 </header>
 
-<div class="container">
+<div class="container-fluid">
 
   <header role="banner" id="page-header">
     <?php if ( $site_slogan ): ?>
@@ -54,7 +53,7 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#header -->
     
-    <div class="row">
+    <div class="row-fluid">
       
     <?php if ($page['sidebar_first']): ?>
       <aside class="span3" role="complementary">
@@ -93,7 +92,7 @@
     <?php endif; ?>
 
   </div>
-  <footer class="footer container">
+  <footer class="footer container-fluid">
     <?php print render($page['footer']); ?>
   </footer>
 </div>
