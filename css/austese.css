@@ -40,7 +40,7 @@
     word-break:break-all;
   }
 body {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* Fix Toolbar for .navbar-fixed-top */
@@ -168,3 +168,9 @@ span.bold {
     background-color: #B94A48;
     border-color: #B94A48;
 }
+h1 { font-size: 24px; line-height: 28px; }
+h2 { font-size: 20px; line-height: 26px; }
+h3 { font-size: 18px; line-height: 22px; }
+h4 { font-size: 16px; line-height: 20px; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 12px; line-height: 20px; }
