@@ -34,6 +34,8 @@
     word-break:normal;
     word-spacing:0px;
     word-wrap:normal;
+    border: none;
+    background-color:transparent;
   }
   .pre {
     white-space:pre-wrap;
