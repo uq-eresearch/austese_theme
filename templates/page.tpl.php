@@ -56,7 +56,7 @@
     <div class="row-fluid">
       
     <?php if ($page['sidebar_first']): ?>
-      <aside class="span3" role="complementary">
+      <aside class="span2" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>  
@@ -86,7 +86,7 @@
       </section>
 
     <?php if ($page['sidebar_second']): ?>
-      <aside class="span3" role="complementary">
+      <aside class="span2" role="complementary">
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
