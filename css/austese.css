@@ -184,3 +184,6 @@ h6 { font-size: 12px; line-height: 20px; }
     margin-left:0;
     padding-left:0;
 }
+.search-form {
+    padding-bottom:1em;
+}
