@@ -182,6 +182,14 @@ function austese_preprocess_page(&$variables) {
         ),
     ));
   }
+
+  if (isset($variables['node'])) {
+    $node = $variables['node'];
+    if ($node->type == 'project') {
+      $val = field_get_items('node', $node, 'field_editors');
+      $variables['title_suffix'] = field_view_value('node', $node, 'field_editors', $val[0]);
+    }
+  }
 }
 
 function _austese_search_form($form, &$form_state) {

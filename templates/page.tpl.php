@@ -67,11 +67,15 @@
       <?php endif; ?>
       <?php if ($breadcrumb): print $breadcrumb; endif;?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
+      <header role="title">
+        <?php print render($title_prefix); ?>
+        <?php if ($title): ?>
+          <h1 class="page-header"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php if ($title_suffix): ?>
+          <p><?php print render($title_suffix); ?></p>
+        <?php endif; ?>
+      </header>
       <?php print $messages; ?>
       <?php if ($tabs): ?>
         <?php print render($tabs); ?>

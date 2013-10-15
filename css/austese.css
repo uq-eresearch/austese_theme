@@ -187,7 +187,17 @@ h6 { font-size: 12px; line-height: 20px; }
 .search-form {
     padding-bottom:1em;
 }
-.field-name-field-editors {
-    margin-bottom:1em;
-    font-weight:bold;
+
+h1.page-header {
+    border-bottom: 0px;
+    margin-bottom: auto;
+    padding-bottom: 0px;
+}
+header[role="title"] p {
+    font-size: 110%;
+    padding-left: 8px;
+}
+header[role="title"] :last-child {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
 }
