@@ -124,7 +124,7 @@ function austese_preprocess_page(&$variables) {
   // Our custom search because its cool :)
   $variables['search'] = FALSE;
   if(theme_get_setting('toggle_search') && module_exists('search'))
-    $variables['search'] = drupal_get_form('_austese_search_form');
+    $variables['search'] = get_nav_search_form();
 
   // Primary nav
   $variables['primary_nav'] = FALSE;
@@ -192,10 +192,8 @@ function austese_preprocess_page(&$variables) {
   }
 }
 
-function _austese_search_form($form, &$form_state) {
-  // Get custom search form for now
-  $form = search_form($form, $form_state);
-
+function get_nav_search_form() {
+  $form = drupal_get_form('search_form');
   // Cleanup
   $form['#attributes']['class'][] = 'navbar-search';
   //$form['#attributes']['class'][] = 'pull-right';
@@ -208,9 +206,9 @@ function _austese_search_form($form, &$form_state) {
   unset($form['basic']['#attributes']);
   $form += $form['basic'];
   unset($form['basic']);
-
   return $form;
 }
+
 
 
 
