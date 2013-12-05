@@ -188,6 +188,11 @@ h6 { font-size: 12px; line-height: 20px; }
     padding-bottom:1em;
 }
 
+.search-snippet em {
+    font-weight: bold;
+    font-style: normal;
+}
+
 h1.page-header {
     border-bottom: 0px;
     margin-bottom: auto;
